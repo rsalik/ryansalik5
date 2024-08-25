@@ -45,7 +45,7 @@
     "ryansalikcom": {
       "name": "ryansalik.com",
       "image": "/imgs/ryansalik.png",
-      "description": "The website you're on right now! Written with SvelteKit. Hosted by Vercel.",
+      "description": "The website you're on right now! Written with NextJS. Hosted by Vercel.",
       "repoLink": "https://github.com/rsalik/ryansalik.com",
       "webLink": "https://ryansalik.com"
     },

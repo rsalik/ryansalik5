@@ -48,11 +48,18 @@ export function array2DRippleUpdate<T>(
   return cancel;
 }
 
+// Ok yes this is not an animation but too lazy to make a new file
 export function colorMix(hex1: string, hex2: string, weight: number) {
   const [rA, gA, bA] = hex1.match(/\w\w/g)!.map((c) => parseInt(c, 16));
   const [rB, gB, bB] = hex2.match(/\w\w/g)!.map((c) => parseInt(c, 16));
-  const r = Math.round(rA + (rB - rA) * weight).toString(16).padStart(2, '0');
-  const g = Math.round(gA + (gB - gA) * weight).toString(16).padStart(2, '0');
-  const b = Math.round(bA + (bB - bA) * weight).toString(16).padStart(2, '0');
+  const r = Math.round(rA + (rB - rA) * weight)
+    .toString(16)
+    .padStart(2, '0');
+  const g = Math.round(gA + (gB - gA) * weight)
+    .toString(16)
+    .padStart(2, '0');
+  const b = Math.round(bA + (bB - bA) * weight)
+    .toString(16)
+    .padStart(2, '0');
   return '#' + r + g + b;
 }

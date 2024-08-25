@@ -26,7 +26,7 @@ export default function Project({ params }: Readonly<{ params: { id: string } }>
           </LinkButton>
         </div>
         {data.webLink.includes('heroku') && (
-          <p className="font-display text-red-500 text-lg mt-1">Heroku has disabled free-tier dynos, so this project is no longer available online.</p>
+          <p className="font-mono text-red-500 text-lg mt-1">Heroku has disabled free-tier dynos, so this project is no longer available online.</p>
         )}
       </div>
       <div className="grow lg:ml-8 lg:min-w-96 self-center flex justify-end">
